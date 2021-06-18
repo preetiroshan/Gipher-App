@@ -1,0 +1,18 @@
+a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #3c69c9;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  a.instagram {
+    color: #ac0d7c;
+  }
+  
