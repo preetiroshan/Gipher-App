@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Container } from "@material-ui/core";
-//Button from material ui is not imported here
-import { makeStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom"
 import { useRoute } from 'wouter'
 import Header from "./components/Header/Header.jsx";
@@ -24,25 +22,12 @@ import PrivateRoute from "./components/PrivateRoute";
 import SearchResult from "./components/SearchResult";
 import PageNotFound from "./components/PageNotFound";
 
-
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     width: "100vw",
-//     height: "100vh",
-//     backgroundColor: theme.palette.grey[400],
-
-//   },
-// }));
-
 function App() {
   const history = useHistory()
   const [matchLogin, params] = useRoute("/Login");
   const [matchReg, params2] = useRoute("/Register")
-  // const classes = useStyles();
   const addToFav = (original) => {
     if (!localStorage.getItem('token')) {
-      // history.push('/Login')
       alert("Please Login to Add GIFs to Favourites")
     }
     else {

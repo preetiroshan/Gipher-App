@@ -5,7 +5,5 @@ export default function PageNotFound() {
     <div>
       <image src="./assets/notfound.jpg" alt="Page Not Found" />
     </div>
-      
-
   )
 }

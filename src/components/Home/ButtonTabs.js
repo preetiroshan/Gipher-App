@@ -3,7 +3,6 @@ import { Box, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid";
 
-
 const useStyles = makeStyles(theme => ({
     root: {
         '& > *': {
@@ -41,18 +40,10 @@ export default function ButtonTabs() {
 
 
                     </Grid>
-
-                    
-                    
                     <Grid item xs={6} sm={6} md={2} lg={2}>
-                
                 <a href="/moods"><Button variant="contained" className="m-1" color="primary"> Moods</Button></a>
-
                     </Grid>
-	
 			</Grid>
-
-
             </Box>
         </div>
     )

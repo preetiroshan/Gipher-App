@@ -6,6 +6,5 @@ export default function Home(){
         <Box textAlign="center" data-testid="home" className="pt-4">
             <ButtonTabs/>
         </Box>
-
     )
 }

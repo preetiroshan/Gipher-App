@@ -8,7 +8,6 @@ const getFavouritesApi = () =>
     })
     .then((response)=>{
       if(response.ok){
-        // console.log(82782)
         return response.json();
       }
     })

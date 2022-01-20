@@ -6,7 +6,7 @@ fetch("http://localhost:3001/api/v1/favourites", {
     'Authorization': `Bearer ${localStorage.getItem('token')}`
   },
   body: JSON.stringify(item)
-})   //add the json server url
+})
 .then((res)=>{
   if(res.ok){
     return res.json()
@@ -19,7 +19,7 @@ fetch(`http://localhost:3001/api/v1/favourites/${id}`, {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${localStorage.getItem('token')}`
   }
-})   //add the json server url
+})
 .then((res)=>{
   if(res.ok){
     return res.json()

@@ -4,10 +4,9 @@ import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import StarIcon from "@material-ui/icons/StarBorder";
+
 export default function TrendingCarousel(props) {
 	const history = useHistory();
-	// const classes = useStyles();
-	// const [trending, setTrending] = useState([]);
 	const [trendingSubSection, setTrendingSubSection] = useState([]);
 
 	useEffect(() => {
@@ -25,10 +24,9 @@ export default function TrendingCarousel(props) {
 					newArr.push(data.data.splice(0, 4));
 				}
 				setTrendingSubSection(newArr);
-				// console.log(trending);
 			});
 	}, []);
-	console.log(trendingSubSection);
+
 	const showAllTrending = () => {
 		history.push("/trending");
 	};
@@ -53,7 +51,7 @@ export default function TrendingCarousel(props) {
 								>
 									<div className="container ">
 										<div className="imageSet">
-											<img src={subItem.images.original.url} alt="hey" />
+											<img src={subItem.images.original.url} alt="gif here" />
 
 											<StarIcon
 												className="fas fa-heart fill-red "

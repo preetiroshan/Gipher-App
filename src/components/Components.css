@@ -1,44 +1,39 @@
-img{
-  width: 100%
+img {
+  width: 100%;
 }
-.container { position: relative; padding-right: 0; padding-left:0;
-display: block}
-.container img { display: block;
-  z-index: 1;}
-  /* background: */
-  /* 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)' } */
-  .container img { display: block;
-    z-index: 1;
-  padding:5px}
-    /* background: */
-    /* 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)' ;} */
-/* .imageSet::after{
-   background:  
-   'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)'
-} */
-.container .fa-heart { position: absolute; top:0; left:0;
-  /* background: */
-      /* 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)'; */
+.container {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  display: block;
+}
 
-/* color: white; */
-/* color: black; */
-/* z-index: 4; */
-animation: pulse 1s ease infinite;
-cursor: pointer;
+.container img {
+  display: block;
+  z-index: 1;
+  padding: 5px;
 }
-/* .container .imageSet{
-  background-color: white;
-} */
+
+.container .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse 1s ease infinite;
+  cursor: pointer;
+}
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
- 
 
- h1{
-  /* background-color: #671f91; */
-  /* color: black; */
-  font-family: 'Lexend Mega', sans-serif;
+h1 {
+  font-family: "Lexend Mega", sans-serif;
 }

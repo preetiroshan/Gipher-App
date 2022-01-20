@@ -29,13 +29,9 @@ export default function Footer() {
                 </a>
             </div>
 
-
-
             <div className="footer-copyright text-center text-dark"><span>&#169;</span> 2021 Copyright :
       <a href="https://www.google.com"> GipherApp</a>
             </div>
-
-
         </footer>
 
     )
